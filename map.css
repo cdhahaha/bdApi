@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.mapBox {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+#container {
+  height: 100%;
+  width: 100%;
+}
+.anchorBL{display:none;}
+
+.panel {
+  position: absolute;
+  float: left;
+  bottom: 5px;
+  left: 5px;
+  background-color: #01101D;
+  z-index: 999;
+  list-style: none;
+  padding-right: 5px;
+  background: linear-gradient(-135deg, transparent 4px, #01101D 0); 
+}
+.panel>li {
+  float: left;
+  padding: 4px;
+  cursor: pointer;
+}
+.icon {
+  display: block;
+  float: left;
+}
+.icon-all {
+  background: url(./icon/all.png) no-repeat center #0B313F;
+  border-top: 1px solid #ACB8BC;
+  width: 20px;
+  height: 18px;
+  background-size: 10px 10px;
+}
+.icon-police {
+  background: url(./icon/police.png) no-repeat center #0B313F;
+  border-top: 1px solid #ACB8BC;
+  width: 20px;
+  height: 18px;
+  background-size: 14px 14px;
+}
+.icon-camer {
+  background: url(./icon/camer.png) no-repeat center #0B313F;
+  border-top: 1px solid #ACB8BC;
+  width: 20px;
+  height: 18px;
+  background-size: 12px 12px;
+}
+.icon-card {
+  background: url(./icon/car.png) no-repeat center #0B313F;
+  border-top: 1px solid #ACB8BC;
+  width: 20px;
+  height: 18px;
+  background-size: 10px 10px;
+}

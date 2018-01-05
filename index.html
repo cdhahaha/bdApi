@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="charset=utf-8;text/html">
+  <meta name="viewport" content="initial-scale=1.0,user-scalable=no" />
+  <title>BMap</title>
+  <link rel="stylesheet" href="./map.css">
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=W0hvP4aOIGUpvqHXkzXUHCxdTTPwdQh4">
+  </script>
+</head>
+<body>
+  <div class="mapBox">
+    <div id="container"></div>
+    <ul class="panel">
+      <li><i class="icon-all icon"></i></li>
+      <li><i class="icon-police icon"></i></li>
+      <li><i class="icon-camer icon"></i></li>
+      <li><i class="icon-card icon"></i></li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+    let map = new BMap.Map('container'); // 地图实例
+    let point = new BMap.Point(116.404, 39.915); // 创建点坐标
+    let mapStyle = {style: 'midnight'}
+    map.centerAndZoom(point, 16); // 初始化
+    map.enableScrollWheelZoom(); // 可缩放
+    map.setMapStyle(mapStyle); // 设置地图样式
+
+  </script>
+</body>
+</html>
